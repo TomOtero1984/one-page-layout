@@ -1,0 +1,46 @@
+@import 'fonts.css';
+
+body{
+    background-color: #151E3F;
+    color: #f2f3d9;
+    font-family: 'Open_Sans';
+    font-weight: normal;
+}
+
+.name-header{
+    justify-content: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#name-sub-header{
+    text-align: center;
+    font-family: 'Open_Sans';
+    font-weight: lighter;
+}
+
+#name-header-img{
+    border-radius: 10%;
+    border: 5px solid #030027;
+}
+
+hr  
+{  
+    width: 60%;
+    border-top: 1px solid #5f6368;
+}
+
+section.summary{
+    padding-left: 10%;
+    width: 90%;
+}
+
+section.summary h4{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+section.summary p{
+    text-align: left;
+    word-spacing: 2.5px;    
+}
