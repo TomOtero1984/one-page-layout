@@ -12,7 +12,6 @@ function sub_name_header_replace(){
 
 function get_vibes(){
     var MAX = pos_vibes_data[0].length - 1
-    console.log((Math.round(MAX*Math.random())))
     var index = [Math.round(MAX*Math.random()),
                  Math.round(MAX*Math.random()),
                  Math.round(MAX*Math.random())]
