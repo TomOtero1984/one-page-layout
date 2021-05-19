@@ -7,30 +7,36 @@ body{
     font-weight: normal;
 }
 
-.name-header{
-    justify-content: center;
-    padding-top: 40px;
-    text-align: center;
-}
-
-#name-sub-header{
-    text-align: center;
-    font-family: 'Open_Sans';
-    font-weight: lighter;
-}
-
-#name-header-img{
-    border-radius: 10%;
-    border: 5px solid #030027;
-}
-
 hr  
 {  
     width: 60%;
     border-top: 1px solid #5f6368;
 }
 
+section.name-header{
+    justify-content: center;
+    padding-top: 2%;
+    text-align: center;
+    background-color: #58648C;
+    border: 2px solid #030027;
+    border-radius: 30px;
+}
+
+section #name-sub-header{
+    text-align: center;
+    font-family: 'Open_Sans';
+    font-weight: lighter;
+}
+
+section #name-header-img{
+    border-radius: 30px;
+    border: 2px solid #030027;
+}
+
 section.summary{
+    border-radius: 30px;
+    padding: 20px;
+    border: 2px solid #030027;
     padding-left: 10%;
     width: 90%;
 }
