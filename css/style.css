@@ -1,8 +1,8 @@
 @import 'fonts.css';
 
 body{
-    background-color: #151E3F;
-    color: #f2f3d9;
+    background-color: #1b2021;
+    color: #e3dc95;
     font-family: 'Open_Sans';
     font-weight: normal;
 }
@@ -17,9 +17,9 @@ section.name-header{
     justify-content: center;
     padding-top: 2%;
     text-align: center;
-    background-color: #58648C;
-    border: 2px solid #030027;
-    border-radius: 30px;
+    background-color: #1b2021;
+    /* border: 2px solid #030027; */
+    /* border-radius: 30px; */
 }
 
 section #name-sub-header{
@@ -33,20 +33,40 @@ section #name-header-img{
     border: 2px solid #030027;
 }
 
-section.summary{
+section.about{
+    background: #51513d;
     border-radius: 30px;
-    padding: 20px;
     border: 2px solid #030027;
-    padding-left: 10%;
+    padding-left: 5%;
+    margin-bottom: 10px;
     width: 90%;
 }
 
-section.summary h4{
+section.about h4{
     padding-top: 10px;
     font-weight: bold;
 }
 
-section.summary p{
+section.about p{
+    text-align: left;
+    word-spacing: 2.5px;    
+}
+
+section.projects{
+    background: #51513d;
+    border-radius: 30px;
+    border: 2px solid #030027;
+    padding-left: 5%;
+    /* padding-right: 5%; */
+    width: 90%;
+}
+
+section.projects h4{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+section.projects p{
     text-align: left;
     word-spacing: 2.5px;    
 }
