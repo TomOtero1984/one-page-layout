@@ -1,25 +1,35 @@
 @import 'fonts.css';
 
 :root{
-    --color-darkest: #1b2021;
-    --color-dark: #51513d;
-    --color-medium: #a6a867;
-    --color-light: #e3dc95;
-    --color-lightest: #e3dcc2;
-    --color-border: #030027;
+    --color-border: #383F42;
+    --color-darkest: #202426;
+    --color-dark: #6C733D;
+    --color-medium: #9DA65D;
+    --color-light: #8C8C88;
+    --color-lightest: #F2F2F2;
 }
 
 body{
     background-color: var(--color-darkest);
-    color: var(--color-light);
+    color: var(--color-lightest);
     font-family: 'Open_Sans';
     font-weight: normal;
+    padding-top: 65px;
 }
 
 hr  
 {  
-    width: 60%;
-    border-top: 1px solid #5f6368;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* width: 60%; */
+    border-top: 2px solid var(--color-light);
+}
+
+.navbar{
+    background-color: var(--color-light);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    opacity: 0.5;
 }
 
 .navbar{
@@ -30,7 +40,6 @@ hr
 
 section.name-header{
     justify-content: center;
-    padding-top: 4%;
     text-align: center;
     /* background-color: #1b2021; */
     /* border: 2px solid #030027; */
@@ -43,15 +52,28 @@ section #name-sub-header{
     font-weight: lighter;
 }
 
-section #name-header-img{
+/* .name-header-img-shdw{
+    align-items: center;
+    justify-content: center;
+    width: 30%;
     border-radius: 30px;
-    border: 2px solid var(--color-border);
+    box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+
+} */
+
+section #name-header-img{
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid var(--color-border);
+    background-image: linear-gradient(at 50% 0, blue 0%, red 50%);
+    background-size: 100% 2px;
 }
 
 section.about{
     background: #51513d;
     border-radius: 30px;
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     padding-left: 5%;
     margin-bottom: 10px;
     width: 90%;
@@ -70,7 +92,7 @@ section.about p{
 section.projects{
     background: #51513d;
     border-radius: 30px;
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     padding-left: 5%;
     /* padding-right: 5%; */
     width: 90%;
