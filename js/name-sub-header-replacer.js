@@ -15,7 +15,7 @@ function get_vibes(){
     var index = [Math.round(MAX*Math.random()),
                  Math.round(MAX*Math.random()),
                  Math.round(MAX*Math.random())]
-    console.log(index)             
+    // console.log(index)             
     var new_vibes = [capitalize(pos_vibes_data[0][index[0]]),
                      capitalize(pos_vibes_data[0][index[1]]),
                      capitalize(pos_vibes_data[0][index[2]])]

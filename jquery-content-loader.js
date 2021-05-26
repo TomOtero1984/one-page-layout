@@ -1,9 +1,9 @@
 // About
 $(function(){
-    $("#about").load("about.html")
+    $("#about").load("content/about.html")
 });
 
 // Projects
 $(function(){
-    $("#projects").load("projects.html")
+    $("#projects").load("content/projects.html")
 });
