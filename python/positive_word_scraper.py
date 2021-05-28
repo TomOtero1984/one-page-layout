@@ -14,12 +14,12 @@ args = parser.parse_args()
 URL = 'https://www.enchantedlearning.com/wordlist/positivewords.shtml'
 DEBUG = args.debug
 NEW_VIBES = args.new
-VIBES = './data/positive-vibes.csv'
+VIBES = '../data/positive-vibes.csv'
 VIBES_EXIST = os.path.exists(VIBES) 
 
 # Check for those vibes because you know sometimes they be hiding
-if not os.path.exists('data'):
-        os.mkdir('data')
+if not os.path.exists('../data'):
+        os.mkdir('../data')
 if VIBES_EXIST and not NEW_VIBES:
     if os.stat(VIBES).st_size > 1:
         print('I got you')
