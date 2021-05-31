@@ -62,6 +62,7 @@ section.about{
     border-radius: 30px;
     padding-left: 5%;
     margin-bottom: 10px;
+    justify-content: center;
     width: 90%;
 }
 section.about h4{
@@ -80,7 +81,7 @@ section.projects{
     border-radius: 30px;
     padding-left: 5%;
     /* padding-right: 5%; */
-    width: 90%;
+    /* width: 90%; */
 }
 section.projects h4{
     padding-top: 10px;
