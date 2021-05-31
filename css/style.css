@@ -35,7 +35,6 @@ hr
 {  
     margin-left: 25%;
     margin-right: 25%;
-    /* width: 60%; */
     border-top: 2px solid var(--color-darkest);
 }
 section.name-header{
@@ -48,10 +47,13 @@ section #name-sub-header{
     font-weight: lighter;
 }
 section #name-header-img{
-    width: 30%;
-    max-width: 300px;
+    max-width: 30%;
     border-radius: 30px;
     border: 5px solid var(--color-border);
+}
+
+#hello{
+    font-size: 32pt;
 }
 
 /* about */
@@ -60,10 +62,11 @@ section.about{
     border: 5px solid var(--color-border);
     /* border-image: url("https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045380_960_720.jpg") 30 30 round; */
     border-radius: 30px;
-    padding-left: 5%;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-bottom: 10px;
     justify-content: center;
-    width: 90%;
+    /* width: 90%; */
 }
 section.about h4{
     padding-top: 10px;
@@ -79,7 +82,9 @@ section.projects{
     background: var(--color-lightest);
     border: 5px solid var(--color-border);
     border-radius: 30px;
-    padding-left: 5%;
+    padding-left: 25px;
+    
+    padding-right: 25px;
     /* padding-right: 5%; */
     /* width: 90%; */
 }
