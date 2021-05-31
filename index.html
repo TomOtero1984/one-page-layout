@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
-    crossorigin="anonymous">
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--  -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-    crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
@@ -25,8 +24,7 @@
   <!-- Handlebars -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
     integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Your's truly <3 -->
   <script src="js/name-sub-header-replacer.js"></script>
   <script src="js/jquery-content-loader.js"></script>
@@ -34,8 +32,9 @@
   <meta name="description" content="Single page portfolio for Thomas Otero">
   <title>One-page-Layout</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -57,25 +56,30 @@
       </div>
     </div>
   </nav>
-  <div class="row">
-    <section class="container-fluid name-header">
-      <h1>Thomas James Otero</h1>
-      <h5 id="name-sub-header">Adaptive | Creative | Engineer</h5>
-      <hr>
-      <img id="name-header-img" onclick="sub_name_header_replace()" alt="Avatar"
-        src="img/174547511_10158230324843263_6685066113105186547_n.jpg">
-      <hr>
-    </section>
-    <section class="container-fluid about" id="about">
-      <p><b>Error loading content:</b></p>
-      <p>Make sure JavaScript is enabled for your browser</p>
-      <a href="https://www.enable-javascript.com/">https://www.enable-javascript.com/</a>
-    </section>
-    <section class="container-fluid projects" id="projects">
-      <p><b>Error loading content:</b></p>
-      <p>Make sure JavaScript is enabled for your browser</p>
-      <a href="https://www.enable-javascript.com/">https://www.enable-javascript.com/</a>
-    </section>
+  <div class="container-fluid">
+    <div close="row">
+      <section class="col-12 name-header">
+        <h1>Thomas James Otero</h1>
+        <h5 id="name-sub-header">Adaptive | Creative | Engineer</h5>
+        <hr>
+        <img id="name-header-img" onclick="sub_name_header_replace()" alt="Avatar"
+          src="img/174547511_10158230324843263_6685066113105186547_n.jpg">
+        <hr>
+      </section>
+    </div>
+    <div close="row">
+      <section class="col about" id="about">
+        <p><b>Error loading content:</b></p>
+        <p>Make sure JavaScript is enabled for your browser</p>
+        <a href="https://www.enable-javascript.com/">https://www.enable-javascript.com/</a>
+      </section>
+      <section class="col projects" id="projects">
+        <p><b>Error loading content:</b></p>
+        <p>Make sure JavaScript is enabled for your browser</p>
+        <a href="https://www.enable-javascript.com/">https://www.enable-javascript.com/</a>
+      </section>
+    </div>
   </div>
 </body>
+
 </html>

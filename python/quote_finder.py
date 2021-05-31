@@ -1,4 +1,5 @@
 import argparse
+import sys
 import os
 import json
 import re
@@ -6,21 +7,25 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# argparser 
+### argparser ### 
 parser = argparse.ArgumentParser(description='Hope you\'re having a good day!')
 parser.add_argument('-d','--debug', action='store_true', default=False)
 parser.add_argument('-n','--new', action='store_true', default=False)
 args = parser.parse_args()
 
-# CONSTANTS
-CWD = os.getcwd()
+### CONSTANTS ###
+# args
 DEBUG = args.debug
 NEW_FILE = args.new
-PAT = r'\d+\.'
-URL  = 'https://www.workflowmax.com/blog/101-engineering-quotes-from-the-minds-of-innovators'
+# file saving
+CWD = os.getcwd()
 FILE_NAME = "engineering_quotes.json"
 SAVE_DIR = "../data/" if CWD.endswith("python") else "./data/" 
 SAVE_PATH = SAVE_DIR + FILE_NAME
+# html parsing
+PAT = r'\d+\.'
+URL  = 'https://www.workflowmax.com/blog/101-engineering-quotes-from-the-minds-of-innovators'
+HTML_TAG = 'p'
 
 # Check for SAVE_DIR and create if not found
 print(f"Searching for \"{SAVE_DIR}\"")
@@ -29,11 +34,17 @@ if not os.path.exists(SAVE_DIR):
     os.mkdir(SAVE_DIR)
 print(f"SAVE_PATH : \"{SAVE_PATH}\"\nReady to gather data!")
 
-
+print(f"Checking if \"{FILE_NAME}\" already exists...")
+if os.path.exists(SAVE_PATH):
+    print(f"\"{FILE_NAME}\" does already exist")
+    if not NEW_FILE:
+        print(f"Exiting {sys.argv[0]}")
+        exit()
+    print(f"Overwritting \"{FILE_NAME}\"")
 # Get and parse URL
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
-results =  soup.find_all('p')
+results =  soup.find_all(HTML_TAG)
 print(f"Successfully received data from \"{URL}\"")
 
 # Clean data from URL
